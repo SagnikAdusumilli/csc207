@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MovieTest" project="A1" tests="27" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="movies.MovieTest" incomplete="true">
+    <testcase name="testOneMovieTwoActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieToStringNoActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorToStringThreeMovies" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorEqualsTwoMoviesDifferentOrder" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorToStringOneMovie" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorNotEqualsTwoActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorNotEqualsNonActor" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorEqualsNoMovies" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testOneMovieAddMovieGetActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieGetName" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieGetYear" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testOneMovieAddActorGetActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieToStringOneMovie" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorNotActedIn" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorNotEqualsExtraMovie" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testGetActorsOneMovieNoActor" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorActedIn" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testAddActorActedWith" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieNotEqualsName" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieNotEqualsYear" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorEqualsTwoMovies" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorToStringNoMovies" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testNotActedWith" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testActorGetName" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieToStringFourActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieEqualsDifferentActors" classname="movies.MovieTest" incomplete="true"/>
+    <testcase name="testMovieEquals" classname="movies.MovieTest" incomplete="true"/>
+  </testsuite>
+</testrun>

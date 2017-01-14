@@ -1,0 +1,49 @@
+package movies;
+
+import java.util.ArrayList;
+
+public class Movie {
+	private String name;
+	private ArrayList<Actor> actors;
+	private int year;
+
+	public Movie(String name, int year) {
+		this.name = name;
+		this.year = year;
+		this.actors = new ArrayList<Actor>();
+	}
+
+	public void addActor(Actor a) {
+			this.actors.add(a);
+			a.addMovie(this);
+	}
+
+	public ArrayList getActors() {
+		return this.actors;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public int getYear() {
+		return this.year;
+	}
+
+	@Override
+	public String toString() {
+		return this.name + ", " + String.valueOf(this.year);
+	}
+
+	@Override
+	public boolean equals(Object other) {
+
+		if (other instanceof Movie) {
+			Movie m = (Movie) other;
+			return this.name.equals(m.getName()) && this.year == m.getYear();
+		}
+
+		return false;
+	}
+
+}

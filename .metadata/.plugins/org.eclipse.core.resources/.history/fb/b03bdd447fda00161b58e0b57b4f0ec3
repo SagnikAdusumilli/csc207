@@ -1,0 +1,63 @@
+package movies;
+
+import java.util.ArrayList;
+
+public class Actor {
+	private String name;
+	private ArrayList<Movie> movies;
+
+	public Actor(String name) {
+		this.name = name;
+		this.movies = new ArrayList<Movie>();
+	}
+
+	public boolean actedIn(Movie m) {
+		return this.movies.contains(m);
+	}
+
+	public boolean actedInSameMovies(Actor a) {
+		
+	}
+
+	public boolean actedWith(Actor a) {
+		/*
+		 * for (Movie m : this.movies){ if (m.getActors().contains(a)){ return
+		 * true; } }
+		 */
+		return false;
+	}
+
+	public void addMovie(Movie m) {
+		if (!this.movies.contains(m)){
+			this.movies.add(m);
+			
+			if(!m.getActors().contains(this)){
+				m.getActors().add(this);
+			}
+		}
+	}
+
+	@Override
+	public boolean equals(Object other) {
+		if(other instanceof Actor){
+			Actor a = (Actor) other;
+			
+			if(this.name.equals(a.getName()) && this.actedInSameMovies(a)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		return false;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	@Override
+	public String toString() {
+		return getName();
+	}
+
+}
